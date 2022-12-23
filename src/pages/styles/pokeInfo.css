@@ -1,0 +1,326 @@
+
+.pokeInfo-container{
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: #3e22a6;
+}
+.pokemon__info{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 7rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+.fondo__header{
+  background-color: #aaa;
+  height: 140px;
+  position: relative;
+}
+.pokeInfo__img{
+  width: 100%;
+  max-width: 280px;
+  position: absolute;
+  top: -125px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.div__span-id{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.pokeInfo__id{
+  text-align: center;
+  padding: .3rem .3rem;
+  border: 1px solid rgb(58, 58, 58);
+}
+
+.text__name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+  text-transform: capitalize;
+}
+.text__name::before,
+.text__name::after{
+  content: '';
+  width: 30%;
+  height: 1.5px;
+  background-color: rgb(95, 93, 93);
+  margin: 0 .3rem;
+}
+
+.pokeInfo__peso-altura{
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  text-align: center;
+}
+.box-poke{
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+.pokeInfo__tipo-habilidad{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.pokeInfo__tipo,
+.pokeInfo__habilidad{
+  display: grid;
+  gap: .6rem;
+}
+.types-poke{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: .8rem;
+}
+.ul-type{
+  background-color: #aaa;
+  padding: .3rem 1.2rem;
+  border-radius: 5px;
+  color: #fff;
+}
+.ul-ability{
+  background-color: white;
+  border: 1px solid black;
+  padding: .3rem 1.2rem;
+  border-radius: 5px;
+}
+
+.Pokeinfo__stats{
+  padding: 1rem 0;
+  display: grid;
+  gap: 1rem;
+}
+.box__title-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box__title-footer::after{
+  content: '';
+  width: 60%;
+  height: 1.5px;
+  background-color: rgb(95, 93, 93);
+  margin: 0 1rem;
+}
+.hability__stat{
+  display: flex;
+  justify-content: space-around;
+}
+.hability__stat > h3{
+  display: flex;
+  align-items: start;
+  width: 85px;
+}
+
+.pokemon-movimientos{
+  width: 70%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  margin-bottom: 1rem;
+  height: 400px;
+  overflow-y: scroll;
+}
+.box__movements{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 1rem .5rem;
+  padding: 1rem 3rem;
+}
+.list__movement{
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  height: 18px;
+  border-radius: .3rem;
+  font-weight: bold;
+  width: auto;
+}
+
+
+
+.bg-grass {
+  background-image: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+}
+.bg-fire {
+background-image: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+}
+.bg-water {
+  background-image: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%); 
+}
+.bg-normal {
+  background-image: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%); 
+}
+.bg-fighting {
+  background-image: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%); 
+}
+.bg-poison {
+  background-image: linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%); 
+}
+.bg-rock {
+  background-image: linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%); 
+}
+.bg-ice {
+  background-image: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%); 
+}
+.bg-dark {
+  background-image: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%); 
+}
+.bg-dragon {
+  background-image: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%); 
+}
+.bg-magic {
+  background-image: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%); 
+}
+.bg-steel {
+  background-image: linear-gradient(179.75deg, #0C1395 -19.96%, #2B319B 43.67%, #7075D9 138.4%); 
+}
+.bg-ground {
+  background-image: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%); 
+}
+.bg-bug {
+  background-image: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%); 
+}
+.bg-ghost {
+  background-image: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%); 
+}
+.bg-psychic {
+  background-image: linear-gradient(179.75deg, #E62D2D -19.96%, #D13E3E 43.67%, #F07F7F 138.4%); 
+}
+.bg-electric {
+  background-image: linear-gradient(179.75deg, #bcc004 -19.96%, #e3dd24 43.67%, #ffff00 138.4%); 
+}  
+.bg-flying {
+  background-image: linear-gradient(179.75deg, #94bbe9 -19.96%, #c1b5da 43.67%, #eeaeca 138.4%); 
+}  
+.bg-fairy {
+  background-image: linear-gradient(179.75deg, #d31c65 -19.96%, #d31c81 43.67%, #d31cc4 138.4%); 
+}
+
+
+
+.colors-grass {
+  background-color: #416460;
+}
+.colors-fire{
+background-color: #E75C35;
+}
+.colors-water{
+background-color: #1479FB;
+}
+.colors-normal{
+background-color: #735259;
+}
+.colors-fighting{
+background-color: #96402A;
+}
+.colors-poison{
+background-color: #5B3184;
+}
+.colors-rock{
+background-color: #7E7E7E;
+}
+.colors-ice{
+background-color: #6FBEDF;
+}
+.colors-dark{
+background-color: #030706;
+}
+.colors-dragon{
+background-color: #478A93;
+}
+.colors-magic{
+background-color: #971B45;
+}
+.colors-steel{
+background-color: #5E736C;
+}
+.colors-ground{
+background-color: #654008;
+}
+.colors-bug{
+background-color: #4AB648;
+}
+.colors-ghost{
+background-color: #323569;
+}
+
+
+
+.color-grass {
+  color: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+}
+.color-fire {
+color: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+}
+.color-water {
+  color: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%); 
+}
+.color-normal {
+  color: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%); 
+}
+.color-fighting {
+  color: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%); 
+}
+.color-poison {
+  color: linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%); 
+}
+.color-rock {
+  color: linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%); 
+}
+.color-ice {
+  color: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%); 
+}
+.color-dark {
+  color: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%); 
+}
+.color-dragon {
+  color: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%); 
+}
+.color-magic {
+  color: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%); 
+}
+.color-steel {
+  color: linear-gradient(179.75deg, #0C1395 -19.96%, #2B319B 43.67%, #7075D9 138.4%); 
+}
+.color-ground {
+  color: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%); 
+}
+.color-bug {
+  color: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%); 
+}
+.color-ghost {
+  color: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%); 
+}
+.color-psychic {
+  color: linear-gradient(179.75deg, #E62D2D -19.96%, #D13E3E 43.67%, #F07F7F 138.4%); 
+}
+.color-electric {
+  color: linear-gradient(179.75deg, #bcc004 -19.96%, #e3dd24 43.67%, #ffff00 138.4%); 
+}  
+.color-flying {
+  color: linear-gradient(179.75deg, #94bbe9 -19.96%, #c1b5da 43.67%, #eeaeca 138.4%); 
+}  
+.color-fairy {
+  color: linear-gradient(179.75deg, #d31c65 -19.96%, #d31c81 43.67%, #d31cc4 138.4%); 
+}
